@@ -142,9 +142,6 @@
 			<textarea name="description"  contenteditable="true" id="description" cols="30" rows="10"></textarea>
 			<div class="content" contenteditable="true"></div>
 			</div>
-			
-			<button class="submit" name="submit" >Submit</button>
-			<span><?php echo $msg; ?></span>
 		</form>
 		
 	</section>
