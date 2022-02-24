@@ -1,0 +1,187 @@
+body,*{
+	margin: 0;
+	padding: 0;
+}
+section.text-editors {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-editors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    max-width: 100%;
+    padding: 15px 15px;
+}
+
+.text-editors-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+textarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+button.btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 0 2px 4px;
+}
+
+.text-editors-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f6f7f7;
+    padding: 10px 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,.2);
+}
+
+button.btn:first-child {
+    margin-left: 0;
+}
+.content {
+    flex: 0 0 100%;
+    border: 1px solid #ddd;
+    min-height: 200px;
+    outline-width: 1px;
+    outline-color: #7e7e7e;
+    padding: 30px;
+    width: 1186px;
+}
+.active {
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,.2);
+}
+.get-url {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="url"] {
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+.get-url-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.get-url-info form {
+    flex: 0 0 100%;
+    max-width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+select.form-control{
+    height: 30px;
+    margin:0 2px 4px;
+    border: 1px solid #ddd;
+    background-color: #efefef;
+}
+input[type="color"] {
+    height: 30px;
+    margin: 0 2px 4px;
+}
+.setcolor {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0 0;
+}
+
+.setcolor > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 6px;
+}
+.setcolor > div input[type="color"] {
+    margin: 0;
+    width: 30px;
+    border: 1px solid #ddd;
+    margin-left: 6px;
+}
+/*modal*/
+.editor-backdrop{
+    background-color: rgba(0,0,0,.5);	
+}
+.editor-backdrop,.editor-modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.editor-backdrop {
+    z-index: 8;
+}
+
+.editor-modal .editor-moda-dialog {
+    max-width: 50%;
+    background-color: #fff;
+    flex: 0 0 50%;
+    min-height: 180px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    position: relative;
+}
+.hide{
+	display: none;
+}
+button.close {
+    position: absolute;
+    right: -13px;
+    top: -15px;
+    background-color: #000;
+    border: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+button.close svg {
+    stroke: #fff;
+}
+.editor-modal .editor-moda-dialog form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.editor-modal .editor-moda-dialog form label {
+    font-size: 19px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #333;
+    display: block;
+    flex: 0 0 100%;
+    padding-bottom: 10px;
+}
+
+.editor-modal .editor-moda-dialog button.geturl {
+    border: 0;
+    background-color: #34495e;
+    color: #fff;
+    padding: 9px 20px;
+}
+
+.editor-modal .editor-moda-dialog form input.form-control {
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
